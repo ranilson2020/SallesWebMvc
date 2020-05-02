@@ -5,26 +5,28 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using SallesWebMvc.Models;
+using SallesWebMvc.Models.ViewModels;
 
 namespace SallesWebMvc.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Index()   //Nome do Método é igual o nome da ação
         {
             return View();
         }
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Aplicação feita em MVC.";
+            ViewData["email"] = "ranilson.analista2020@hotmail.com";
 
             return View();
         }
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "Entre em contato.";
 
             return View();
         }
