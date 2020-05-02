@@ -7,7 +7,7 @@ using SalesWebMvc.Models;
 
 namespace SalesWebMvc.Data
 {
-    public class SalesWebMvcContext : DbContext
+    public class SalesWebMvcContext : DbContext  //Encapsula os dados
     {
         public SalesWebMvcContext (DbContextOptions<SalesWebMvcContext> options)
             : base(options)
