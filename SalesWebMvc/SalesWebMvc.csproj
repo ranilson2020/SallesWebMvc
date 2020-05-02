@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <RootNamespace>SallesWebMvc</RootNamespace>
-    <AssemblyName>SallesWebMvc</AssemblyName>
+    <RootNamespace>SalesWebMvc</RootNamespace>
+    <AssemblyName>SalesWebMvc</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
