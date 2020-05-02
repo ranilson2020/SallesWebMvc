@@ -1,6 +1,6 @@
 ﻿
 
-namespace SallesWebMvc.Models
+namespace SalesWebMvc.Models
 {
     public class Department    //2º passo Criar a classe Departamento e seus atributos
     {
