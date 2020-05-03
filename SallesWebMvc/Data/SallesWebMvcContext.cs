@@ -7,13 +7,16 @@ using SalesWebMvc.Models;
 
 namespace SalesWebMvc.Data
 {
-    public class SalesWebMvcContext : DbContext  //Encapsula os dados
+    public class SalesWebMvcContext : DbContext  //Encapsula os dados no DbContext, com as 3 entidades
     {
         public SalesWebMvcContext (DbContextOptions<SalesWebMvcContext> options)
             : base(options)
         {
+       
         }
 
-        public DbSet<SalesWebMvc.Models.Department> Department { get; set; }
+        public DbSet<Department> Department { get; set; } //DbSet Departamento
+        public DbSet<Seller> Seller { get; set; }         //DbSet Vendedor
+        public DbSet<SalesRecord> SalesRecords { get; set; } // DbSet Registro de Vendas
     }
 }
